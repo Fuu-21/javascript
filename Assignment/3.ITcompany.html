@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+</head>
+<body>
+    <h1>User Registration Form</h1>
+    <form name="registrationForm" action="submit.php" method="POST" onsubmit="return validateForm()" enctype="multipart/form-data">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required><br>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" name="mobile" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+
+        <label for="course">Interested Course:</label>
+        <select id="course" name="course" required>
+            <option value="">Select a course</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+        </select><br>
+
+        <label for="hobbies">Hobbies:</label>
+        <textarea id="hobbies" name="hobbies"></textarea><br>
+
+        <label for="picture">Picture:</label>
+        <input type="file" id="picture" name="picture"><br>
+
+        <label for="cv">CV (PDF only):</label>
+        <input type="file" id="cv" name="cv" accept=".pdf"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

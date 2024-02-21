@@ -1,0 +1,14 @@
+<html><body>
+  <button onclick="promptFunction()">Try it</button>
+  <p id="demo"></p>
+  <script>
+    function promptFunction(){
+      var person = prompt("Please Enter your name","Beauty");
+      if(person != null){
+        document.getElementById("demo").innerHTML=
+        "Hello"+person+"How are you today??";
+      }
+    }
+  </script>
+</body>
+</html>
